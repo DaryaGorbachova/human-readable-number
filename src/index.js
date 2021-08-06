@@ -54,7 +54,7 @@ module.exports = function toReadable (number) {
             switch (number[0]) {
         case '2': result += 'twenty';
             break;
-        case '3': result += 'thrirty';
+        case '3': result += 'thirrty';
             break;
         case '4': result += 'forty';
             break;
@@ -142,7 +142,7 @@ module.exports = function toReadable (number) {
             switch (number[1]) {
         case '2': result += ' twenty';
             break;
-        case '3': result += ' thrirty';
+        case '3': result += ' thirrty';
             break;
         case '4': result += ' forty';
             break;
@@ -187,7 +187,10 @@ module.exports = function toReadable (number) {
     }
     
     
-  //  toReadable(121);
+    toReadable(121);
+    
+    
+    
     
     
     
