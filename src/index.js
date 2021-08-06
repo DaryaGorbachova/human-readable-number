@@ -1,4 +1,4 @@
-module.exports =function toReadable (number) {
+module.exports = function toReadable (number) {
     number = number.toString();
     let result = '';
         let h = ' hundred'
@@ -49,27 +49,12 @@ module.exports =function toReadable (number) {
             break;
         case '19': result += 'nineteen';
             break;			
-        case '20': result += 'twenty';
-            break;
-        case '30': result += 'trirty';
-            break;
-        case '40': result += 'forty';
-            break;
-        case '50': result += 'fifty';
-            break;
-        case '60': result += 'sixty';
-            break;
-        case '70': result += 'seventy';
-            break;
-        case '80': result += 'eighty';
-            break;
-        case '90': result += 'ninety';
             default: '';
         }} else { 
             switch (number[0]) {
         case '2': result += 'twenty';
             break;
-        case '3': result += 'trirty';
+        case '3': result += 'thrirty';
             break;
         case '4': result += 'forty';
             break;
@@ -157,7 +142,7 @@ module.exports =function toReadable (number) {
             switch (number[1]) {
         case '2': result += ' twenty';
             break;
-        case '3': result += ' trirty';
+        case '3': result += ' thrirty';
             break;
         case '4': result += ' forty';
             break;
@@ -202,7 +187,7 @@ module.exports =function toReadable (number) {
     }
     
     
- //   toReadable(913);
+  //  toReadable(121);
     
     
     
