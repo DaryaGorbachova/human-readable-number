@@ -1,4 +1,4 @@
-module.exports = function toReadable (number) {
+module.exports =function toReadable (number) {
     number = number.toString();
     let result = '';
         let h = ' hundred'
@@ -130,43 +130,29 @@ module.exports = function toReadable (number) {
             break;			
         default: result = '';	}
     if (number[1] === '1') {
-        switch (number) {
-        case '10': result += 'ten';
+        switch (number[1]+number[2]) {
+        case '10': result += ' ten';
             break;
-        case '11': result += 'eleven';
+        case '11': result += ' eleven';
             break;
-        case '12': result += 'twelve';
+        case '12': result += ' twelve';
             break;
-        case '13': result += 'thirteen';
+        case '13': result += ' thirteen';
             break;
-        case '14': result += 'fourteen';
+        case '14': result += ' fourteen';
             break;
-        case '15': result += 'fifteen';
+        case '15': result += ' fifteen';
             break;
-        case '16': result += 'sixteen';
+        case '16': result += ' sixteen';
             break;
-        case '17': result += 'seventeen';
+        case '17': result += ' seventeen';
             break;
-        case '18': result += 'eighteen';
+        case '18': result += ' eighteen';
             break;
-        case '19': result += 'nineteen';
+        case '19': result += ' nineteen';
             break;			
-        case '20': result += 'twenty';
-            break;
-        case '30': result += 'trirty';
-            break;
-        case '40': result += 'forty';
-            break;
-        case '50': result += 'fifty';
-            break;
-        case '60': result += 'sixty';
-            break;
-        case '70': result += 'seventy';
-            break;
-        case '80': result += 'eighty';
-            break;
-        case '90': result += 'ninety';
-            default: '';
+        case '20': result += ' twenty';
+                return result;
         }} else { 
             switch (number[1]) {
         case '2': result += ' twenty';
@@ -207,7 +193,16 @@ module.exports = function toReadable (number) {
         case '9': result += ' nine';
             break;	
             }
-        }            
+        }
+            
+            
     }
-            return result;
-}
+    
+        return result;
+    }
+    
+    
+ //   toReadable(913);
+    
+    
+    
